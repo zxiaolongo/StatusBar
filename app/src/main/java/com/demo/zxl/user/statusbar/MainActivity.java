@@ -13,6 +13,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.demo.zxl.user.statusbar.activity.ColorStatusBarActivity;
+import com.demo.zxl.user.statusbar.activity.ImageStatusBarActivity;
 import com.demo.zxl.user.statusbar.util.StatusBarUtil;
 
 
@@ -72,14 +73,14 @@ public class MainActivity extends BaseActivity {
             }
         });
 
-//        mBtnSetTransparent.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, ImageStatusBarActivity.class);
-//                intent.putExtra(ImageStatusBarActivity.EXTRA_IS_TRANSPARENT, true);
-//                startActivity(intent);
-//            }
-//        });
+        mBtnSetTransparent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ImageStatusBarActivity.class);
+                intent.putExtra(ImageStatusBarActivity.EXTRA_IS_TRANSPARENT, true);
+                startActivity(intent);
+            }
+        });
 //
 //        mBtnSetTranslucent.setOnClickListener(new View.OnClickListener() {
 //            @Override
