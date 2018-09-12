@@ -19,6 +19,8 @@
         <activity android:name=".activity.ColorStatusBarActivity"/>
         <activity android:name=".activity.ImageStatusBarActivity"/>
         <activity android:name=".activity.ImageViewActivity"/>
+        <activity android:name=".activity.UseInFragmentActivity"/>
+        <activity android:name=".activity.SwipeBackActivity"/>
     </application>
 
 </manifest>

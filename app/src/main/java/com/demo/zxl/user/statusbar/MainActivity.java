@@ -15,6 +15,8 @@ import android.widget.TextView;
 import com.demo.zxl.user.statusbar.activity.ColorStatusBarActivity;
 import com.demo.zxl.user.statusbar.activity.ImageStatusBarActivity;
 import com.demo.zxl.user.statusbar.activity.ImageViewActivity;
+import com.demo.zxl.user.statusbar.activity.SwipeBackActivity;
+import com.demo.zxl.user.statusbar.activity.UseInFragmentActivity;
 import com.demo.zxl.user.statusbar.util.StatusBarUtil;
 
 
@@ -100,21 +102,21 @@ public class MainActivity extends BaseActivity {
             }
         });
 
-//        mBtnUseInFragment.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, UseInFragmentActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        mBtnUseInFragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, UseInFragmentActivity.class);
+                startActivity(intent);
+            }
+        });
 //
-//        mBtnSetColorForSwipeBack.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, SwipeBackActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        mBtnSetColorForSwipeBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SwipeBackActivity.class);
+                startActivity(intent);
+            }
+        });
 
         mChbTranslucent.setOnClickListener(new View.OnClickListener() {
             @Override
